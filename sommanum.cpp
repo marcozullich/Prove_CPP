@@ -7,9 +7,8 @@ int main(){
     int S=0;
 
     while(C<N){
-        cin>>n;
-        C++
-        S=S+n;
+        S=S+C;
+        C++;
     }
     cout<< "la somma è: "<< endl << S;
 }

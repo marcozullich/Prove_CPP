@@ -5,30 +5,24 @@ int main()
 
     int N;
     cout << "inserisci N: ";
-    cin >> to_string(N) >> endl;
+    cin >> N;
+    cout << endl;
     int n;
-    int m;
     int C = 0;
-    int MIN;
     int MAX;
 
     while (C < N)
     {
         cout << "inserisci numero: ";
         cin >> n;
+        if(C==0){
+            MAX = n;
+        }else{
+            if(n>MAX){
+                MAX=n;
+            }
+        }
         C++;
     }
-    cout << "inserisci un altro numero: ";
-    cin >> m;
-    if (n < m)
-    {
-        MIN = n;
-        MAX = m;
-    }
-    else
-    {
-        MIN = m;
-        MAX = n;
-    }
-    cout << "il numero massimo è: " << endl << MAX;
+    cout << "il numero massimo è: "  << MAX << endl;
 }

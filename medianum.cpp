@@ -11,10 +11,10 @@ int main(){
     cout<<"inserisci N: ";
     cin>>N;
     while(C<N){
-        cin n;
+        cin >> n;
         C++;
         S=S+n;
     }
     M=S/C;
-    cout<<"la media è: "<< endl << M;
+    cout<<"la media è: "<< M << endl ;
 }
